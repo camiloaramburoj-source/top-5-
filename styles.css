@@ -166,3 +166,27 @@ body {
         height: auto;
     }
 }
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .main-header {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .titulo {
+        font-size: 1.6rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+    
+    .card-wrapper {
+        gap: 1rem;
+    }
+    
+    .outside-img {
+        max-width: 180px;
+    }
+}
+ 
