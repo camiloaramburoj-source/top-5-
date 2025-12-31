@@ -9,7 +9,7 @@
 }
 
 body {
-    background: radial-gradient(#c8dccd, #191205);  
+    background: radial-gradient(#c8dccd, #000000);  
     font-family: 'Crimson Text', serif; 
     color: var(--primary-color);
     margin: 0;
@@ -138,7 +138,7 @@ body {
 /* Responsive Fix */
 @media (max-width: 900px) {
     .card-wrapper, .card-wrapper:nth-child(even) {
-        flex-direction: column; /* Stack vertically on small screens */
+        flex-direction: column-reverse; /* Stack vertically, Image on top */
         align-items: center;
         gap: 1.5rem;
     }
@@ -147,6 +147,22 @@ body {
         width: 100%;
     }
 
-    
+    .main-header {
+        padding: 2rem 1rem;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .logo {
+        margin: 0 auto 1.5rem auto;
+        margin-left: auto; /* Override desktop absolute margin */
+    }
+
+    .outside-img {
+        width: 100%;
+        max-width: 220px; 
+        height: auto;
+    }
 }
- 
